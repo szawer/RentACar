@@ -1,9 +1,9 @@
-package CarRental;
+package carRental;
 
 import java.util.HashMap;
 
 public class Rental {
-    private DataManager dataManager;
+    private final DataManager dataManager;
 
     public Rental(DataManager dataManager){
         this.dataManager = dataManager;

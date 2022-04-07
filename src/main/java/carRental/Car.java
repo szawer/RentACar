@@ -1,4 +1,4 @@
-package CarRental;
+package carRental;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -8,7 +8,7 @@ public class Car {
     private String manufacturer;
     private String model;
     private int productionYear;
-    private boolean borrowed = false;
+    private boolean borrowed;
 
     public Car(String id, String manufacturer, String model, int productionYear) {
         this(id,manufacturer,model,productionYear,false);
@@ -29,10 +29,6 @@ public class Car {
 
     public String getId() {
         return id;
-    }
-
-    public String getManufacturer() {
-        return manufacturer;
     }
 
     public String getModel() {
